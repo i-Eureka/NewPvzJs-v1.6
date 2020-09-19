@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>好友留言</title>
+		<link href="http://enderexplain.myzjzj.ml/haoyouliuyan/1.ico" rel="shortcut icon"/>
+	</head>
+
+	<body onkeydown="fun()">
+		<div align="center">
+			请输入你最近的考试分数：
+			<input type="text" id="guess">
+			<input type="button" value="完成" id="btn"><br />
+			
+			<p> </p>
+			
+			<audio src="http://enderexplain.myzjzj.ml/2.mp3" loop="loop" autoplay="autoplay"> </audio>
+	
+	
+	
+	
+	
+	
+	
+	<!--<h3 onclick="var time=130">1.1倍速</h3>
+	<h3 onclick="var time=100">1.5倍速</h3>
+	<h3 onclick="var time=80">2倍速</h3>-->
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		</div>
+		<span id="result"> </span>
+		
+		<br /><br />
+		<div align="center">
+			
+			<canvas id="canvas" height="500" width="800" style="border:2px solid green;">
+
+		</canvas>
+		</div>
+	<script>
+	alert("本留言要根据你的名字和成绩进行我给你的留言，但不会记录，所以请填真实的信息");
+	var name = prompt("你的名字叫什么？");
+	
+	var yi = ",我们已经分开了";
+	var d = new Date(); 
+	var dy = d.getFullYear()-2017;
+	var dm = d.getMonth()+1;
+	var dd = d.getDate();
+	var birthM  = [];
+	
+	var birthD = [];
+	
+	
+	var sp1 = "你们班现在怎么样，你的生活怎么样，都可以通过电话来联系我哦。   电话：18310078331  QQ:1509095749";
+	var er = "年了，我听说你最近的成绩很不错哟，那我希望你不要骄傲，继续加油努力吧!";
+	var san = "年了，我听说你最近的成绩还行，那我希望你继续加油努力!";
+	var si = "年了，我听说你最近的成绩在80多，我希望你好好学习，天天向上吧！";
+	var wu = "年了，我听说你最近的成绩在70多，你现在要加把劲的学习，以后才能为国家服务！";
+	var liu = "年了，我听说你最近的成绩在70以下啊，别灰心，继续努力就会取得好成绩!";
+	var sp = "别忘了我的电话以及qq，还有我们的一份情~~~~电话：18310078331  QQ:1509095749";
+	var n = "</br>";
+	var btn = document.getElementById("btn");
+			btn.onclick=function(){
+				var guess = document.getElementById("guess").value;
+				var result = document.getElementById("result");
+				switch(name){
+					case "郑博予":
+					l();
+					sps();
+					bri(3,16,1);
+					break;
+					case "张仁赫":
+					
+					
+					case "李时光":
+					l();
+					sps();
+					bri(11,26,2);
+					break;
+				case "吴子蔚":
+				case "钟逍遥":
+				case "梁佳悦":
+				case "石润臣":
+				case "赵子豪":
+				case "董一芃":
+				case "王雨辰":
+				case "王雨晨":
+				case "张辰鸣":
+				sps1();
+				break;
+				default:
+				normal();
+				}
+				
+			};
+			function sps1(){
+				var uess = document.getElementById("guess").value;
+			var	 r = document.getElementById("result");
+			if (uess >=100 && uess<=120) {
+					r.innerHTML=name+yi+dy+er+n+sp1;
+				} else if (uess>=90 && uess<100) {
+					r.innerHTML=name+yi+dy+san+sp1;
+				} else if (uess>=80 && uess<90){
+					r.innerHTML=name+yi+dy+si+sp1;
+				} else if(uess>=70 && uess<80){
+					r.innerHTML=name+yi+dy+wu+sp1;
+				}	else if(uess<=69 && uess>=0){
+					
+					r.innerHTML=name+yi+dy+liu+sp1;
+				}		else{
+					r.innerHTML="请输入真实成绩";
+					
+					
+ 
+
+				}
+				
+			}
+			function normal(){
+				var guess = document.getElementById("guess").value;
+				var r = document.getElementById("result");
+			if (guess >=100 && guess<=120) {
+					r.innerHTML=name+yi+dy+er;
+				} else if (guess>=90 && guess<100) {
+					r.innerHTML=name+yi+dy+san;
+				} else if (guess>=80 && guess<90){
+					r.innerHTML=name+yi+dy+si;
+				} else if(guess>=70 && guess<80){
+					r.innerHTML=name+yi+dy+wu;
+				}	else if(guess<=69 && guess>=0){
+					
+					r.innerHTML=name+yi+dy+liu;
+				}		else{
+					r.innerHTML="请输入真实成绩";
+					//setInterval(function(){window.location.reload();},2000);
+				}
+			}
+			
+			function sps(){
+					var uess = document.getElementById("guess").value;
+			var	 r = document.getElementById("result");
+			if (uess >=100 && uess<=120) {
+					r.innerHTML=name+yi+dy+er+n+sp;
+				} else if (uess>=90 && uess<100) {
+					r.innerHTML=name+yi+dy+san+sp;
+				} else if (uess>=80 && uess<90){
+					r.innerHTML=name+yi+dy+si+sp;
+				} else if(uess>=70 && uess<80){
+					r.innerHTML=name+yi+dy+wu+sp;
+				}	else if(uess<=69 && uess>=0){
+					
+					r.innerHTML=name+yi+dy+liu+sp;
+				}		else{
+					r.innerHTML="如果你不想说那就算了吧";
+					r.innerHTML=n+"我不会像其他人那样叫你再强迫写成绩的";
+				}
+			}
+			function bri(m,d,dd){
+				
+				if(dm==birthM[m] && dd ==birthD[d]){
+					if(dd==1){
+						r.innerHTML=n+"今天是你生日，不要忘记我们那年的生日会哟。";
+					}else if(dd==2){
+						r.innerHTML=n+"到时候一定要见面，再次过生日！";
+					}
+						
+					}
+			}
+			function l(){
+				for(var bm =1;bm<=12;bm++){
+		birthM[bm] = bm;
+		
+	}
+			for(var bd =1;bd<=31;bd++){
+		birthD[bd] = bd;
+		
+	}
+			}
+	
+			var canvas = document.getElementById("canvas");
+			var ctx = canvas.getContext("2d");
+			var a = new Image();
+			a.src = "xx.png";
+			var ab = new Image();
+			ab.src = "aa.png";
+			var n = 0;
+			ctx.font = "30px 微软雅黑";
+			setInterval(function(){
+				ctx.clearRect(0,0,800,500);
+				switch(n){
+					case 0:
+					ctx.font = "100px 微软雅黑";
+					ctx.fillText("hello",250,140);
+					break;
+					case 1:
+					ctx.font = "100px 微软雅黑";
+					ctx.fillText("大家还记得我吗?",50,200);
+					break;
+					case 2:
+					ctx.font = "50px 微软雅黑";
+					ctx.fillText("我是黄渤轩，和你分开已经"+dy+"年了",40,200);
+					break;
+					case 3:
+					ctx.font = "120px 微软雅黑";
+					ctx.fillText("在这里",200,200);
+					break;
+					case 4:
+					ctx.font = "70px 微软雅黑";
+					ctx.fillText("我要跟你说一些话",140,240);
+					break;
+					case 5:
+					ctx.font = "40px 微软雅黑";
+					ctx.fillText("祝你天天向上，长大之后事业成功",100,240);
+					break;
+					case 6:
+					ctx.font = "40px 微软雅黑";
+					ctx.fillText("好了，我要说的话就这么多了",130,240);
+					break;
+					case 7:
+					ctx.font = "100px 微软雅黑";
+					ctx.fillText("大家再见",200,240);
+					break;
+					default:
+					ctx.drawImage(a,0,0,400,650);
+					ctx.drawImage(ab,400,0,400,630);
+				}
+				n++;
+			},2000);
+
+		</script>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</body>
+</html>

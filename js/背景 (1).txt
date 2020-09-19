@@ -1,0 +1,16 @@
+images/interface/background1.jpg   白天草地
+images/interface/background2.jpg   夜晚草地
+images/interface/background3.jpg   白天泳池
+images/interface/background4.jpg   夜晚泳池
+images/interface/background5.jpg   水乡嘉兴
+images/interface/backgroundLG.jpg   龙宫
+images/interface/backgroundwall.jpg   长城
+images/interface/backgroundwall2.jpg   晚上长城
+images/interface/backgroundX1.jpg   大夫家后院
+images/interface/backgroundX2.jpg   闹鬼的村子
+images/interface/backgroundX3.jpg   溶洞
+images/interface/backgroundX4.jpg   牛魔王宫殿
+images/interface/rrg.jpg   	    魔音之旅
+
+
+

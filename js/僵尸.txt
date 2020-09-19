@@ -1,0 +1,26 @@
+oBackupDancer  伴舞
+oDancingZombie  舞者
+oZombie oZombie2 oZombie3 普通
+oMustacheZombie  胡子
+oFlagZombie  旗帜
+oConeheadZombie  路障
+oLionDanceZombie 舞狮
+oBucketheadZombie 铁桶
+oFootballZombie  橄榄球
+oHeiFootballZombie  黑橄榄球
+oCFootballZombie   长城橄榄球
+oPoleVaultingZombie  撑杆
+oCPoleVaultingZombie  棒子（不知道干什么用的，没出现过，不要乱弄）
+oNewspaperZombie  读报
+oScreenDoorZombie  铁栅门
+oTrashZombie  垃圾桶
+oDuckyTubeZombie1 鸭子救生圈
+oWarshipsZombie 军舰
+oDuckyTubeZombie2 路障鸭子救生圈
+oDuckyTubeZombie3 铁桶鸭子救生圈
+oSnorkelZombie  潜水僵尸
+oSubZombie  潜水艇
+oDolphinRiderZombie  海豚
+oImp  小鬼
+oJackinTheBoxZombie  小丑
+oBalloonZombie  气球
