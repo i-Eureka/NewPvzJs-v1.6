@@ -1,6 +1,6 @@
 # 植物大战僵尸Js版v1.6
 基于原版修复部分代码 <br/>
-演示地址：https://www.cloudnom.tk
+演示地址：https://www.cloudnom.tk <br/>
 示例： <br/>
 1、配置nginx
 ```
