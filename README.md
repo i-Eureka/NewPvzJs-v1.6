@@ -1,5 +1,5 @@
 # NewPvzJs-v1.6
-植物大战僵尸Js版
+植物大战僵尸Js版 <br/>
 基于原版修复部分代码
 食用方法：
 git clone https://github.com/miles-lin/NewPvzJs-v1.6.git  ###clone到服务器
